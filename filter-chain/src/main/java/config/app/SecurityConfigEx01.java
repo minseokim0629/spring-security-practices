@@ -1,4 +1,4 @@
-package config.web;
+package config.app;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +19,7 @@ import jakarta.servlet.http.HttpServletRequest;
 @Configuration
 public class SecurityConfigEx01 {
 	@Bean
-	public FilterChainProxy securityFilterChainProxy() {
+	public FilterChainProxy springSecurityFilterChain() {
 		List<SecurityFilterChain> securityFilterChains = Arrays.asList(
 				new SecurityFilterChain() {
 
